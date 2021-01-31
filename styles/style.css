@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     background-color: #00539F;
 }
@@ -11,10 +16,11 @@ h1 {
     font-family: 'Pirata One', cursive;
 }
 
-.divmenu {
-    color: black;
-    border-right: black;
-    align-content: center;
+.menu a {
+    text-decoration: black;
+    padding: 20px;
+    margin-top: 200px;
+    border: 2px solid #c3c3c3;
 }
 
 footer {
@@ -24,7 +30,7 @@ footer {
 }
 
 body {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     background-color: #FF9500;
     padding: 0 20px 20px 20px;
@@ -33,7 +39,7 @@ body {
 
 p {
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: black;
     border: 2px solid black;
     text-align: center;
     width: 100%;
@@ -41,5 +47,5 @@ p {
 
 img {
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
 }
