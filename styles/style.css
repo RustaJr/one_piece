@@ -11,6 +11,12 @@ h1 {
     font-family: 'Pirata One', cursive;
 }
 
+.divmenu {
+    color: black;
+    border-right: black;
+    align-content: center;
+}
+
 footer {
     color: #283847;
     width: 100%;
@@ -36,8 +42,4 @@ p {
 img {
     display: block;
     margin: 0 auto;
-}
-
-.divmenu {
-    color: black;
 }
