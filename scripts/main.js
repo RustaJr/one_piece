@@ -20,7 +20,7 @@ function defineNomeUsuario() {
         defineNomeUsuario();
     } else {
         localStorage.setItem('nome', meuNome);
-        meuCabecalho.textContent = 'ONE PIECE é FODA, ' + meuNome;
+        meuCabecalho.textContent = 'Bem vindo, ' + meuNome;
     }
 }
 
