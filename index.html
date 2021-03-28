@@ -24,19 +24,24 @@
 
 <body>
 
-    <div class="container_base">
-        <div class="banner_home" title="banner_home">
-            <img src="img/one_piece_capa.png" alt="one_piece_capa">
-            <div class="container_news">
-                <div class="center">
-                    <h2>NEWS</h2>
-                    <p>imagine uma noticia</p>
-                </div>
-            </div>
+    <!--<div class="container_base">-->
+    <div class="banner_home" title="banner_home">
+        <img src="img/one_piece_capa.png" alt="one_piece_capa">
+        <div class="container_news">
+            <img style="opacity:1;" src="img/imagine uma noticia1.png" />
+            <img style="opacity: 0;" src="img/imagine uma noticia2.png" />
+            <img style="opacity: 0;" src="img/imagine uma noticia3.png" />
         </div>
+        <div class="bullets">
+            <div class="bullet-single active-bullet"></div>
+            <div class="bullet-single"></div>
+            <div class="bullet-single"></div>
+        </div>
+    </div>
+    <!--</div>
 
 
-        <!--center-->
+    <!--center-->
     </div>
     <!--Banner Image-->
 
@@ -45,7 +50,34 @@
         < <p>Esta é uma página de One piece</p>
     </div>
     <!--Text-->
+    <script>
+        var lastIndex = 0;
 
+        var images = document.querySelectorAll('.container_news img');
+
+        images.forEach((item, index) => {
+            document.querySelectorAll('.bullet-single')[index]
+                .addEventListener('click', () => {
+                    let lastImage = document.querySelectorAll('.container_news img')[lastIndex];
+                    let actualImage = document.querySelectorAll('.container_news img')[index];
+
+                    //Resetar as bullets e setar a nova com base na imagem.
+
+                    document.querySelectorAll('.bullet-single')[lastIndex]
+                        .classList.remove('active-bullet');
+
+                    ;
+                    document.querySelectorAll('.bullet-single')[index]
+                        .classList.add('active-bullet');
+
+                    lastImage.style.opacity = 0;
+                    actualImage.style.opacity = 1;
+
+                    lastIndex = index;
+
+                })
+        })
+    </script>
 
 </body>
 

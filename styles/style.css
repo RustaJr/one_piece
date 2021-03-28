@@ -74,6 +74,15 @@ a:hover {
     color: rgb(255, 59, 59);
 }
 
+.container_news {
+    position: absolute;
+    right: 0px;
+    top: 145px;
+    width: 40%;
+    height: 340px;
+    transition: 1s;
+}
+
 .banner_home img {
     position: relative;
     width: 60%;
@@ -81,29 +90,29 @@ a:hover {
     border-bottom: 4px solid black;
 }
 
-.container_base {
-    width: 100%;
-    height: 350px;
-    background-color: rgb(209, 128, 23);
-}
-
-.container_news {
+.container_news img {
     position: absolute;
-    width: 40%;
-    height: 340px;
-    margin: -7px;
-    border: 4px solid black;
-    background-color: rgba(186, 185, 182, 0.93);
-    top: 147px;
-    right: 5px;
-    /*design/position*/
-    float: right;
+    width: 100%;
+    height: 100%;
 }
 
-.container_news h2 {
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 30px;
+.bullets {
+    text-align: right;
+    float: initial;
+}
+
+.bullet-single {
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+.active-bullet {
+    background-color: #333;
 }
 
 .footer {
@@ -112,9 +121,15 @@ a:hover {
     text-align: center;
 }
 
+.images_gallery {
+    padding-left: 20px;
+}
+
 .images_gallery img {
     width: 33.3%;
-    display: inline-block;
+    height: 20%;
+    position: absolute;
+    padding-left: 20px;
 }
 
 .images_gallery p:hover {
